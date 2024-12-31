@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Web Title -->
+        <title>Legal Solution</title>
+
+        <!-- DaisyUI CDN Link -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+        
+        <!-- Custom CSS File -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+
+    <body class="font-poppins">
+        <!-- Header Section Start -->
+        <header class="container mx-auto my-10">
+            <!-- Navbar Section Start -->
+            <div class="navbar">
+                <div class="navbar-start justify-between lg:justify-start flex-row-reverse lg:flex-row w-full lg:w-1/2">
+                    <!-- Responsive Navbar -->
+                    <div class="drawer drawer-end justify-end z-10 lg:hidden">
+                        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                        <div class="drawer-content">
+                            
+                          <!-- Page content here -->                          
+                            <div tabindex="0" role="button" class="btn btn-ghost pr-0 lg:hidden">
+                                <label for="my-drawer" class="drawer-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="drawer-side">
+                            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                            <ul class="menu bg-dark-7 text-base text-dark-2 min-h-full w-80 p-6 items-center">
+                                <!-- Sidebar content here -->
+                                <li class="bg-btn-color/50 w-full items-center border border-btn-color rounded-t-lg overflow-hidden">
+                                    <a href="index.html" class="w-full block text-center hover:bg-dark-7 focus:bg-dark-7 py-3 rounded-none hover:text-btn-color">Home</a>
+                                </li>
+
+                                <li class="bg-btn-color/50 w-full items-center border-l border-r border-btn-color">
+                                    <a href="#services" class="w-full block text-center hover:bg-dark-7 focus:bg-dark-7 py-3 rounded-none hover:text-btn-color"><i class="fa-solid fa-chevron-left"></i> Services</a>
+                                </li>
+
+                                <li class="bg-btn-color/50 w-full items-center border border-btn-color">
+                                    <a href="#cases" class="w-full block text-center hover:bg-dark-7 focus:bg-dark-7 py-3 rounded-none hover:text-btn-color"><i class="fa-solid fa-chevron-left"></i> Cases</a>
+                                </li>
+
+                                <li class="bg-btn-color/50 w-full items-center border-l border-r border-btn-color">
+                                    <a href="#blog" class="w-full block text-center hover:bg-dark-7 focus:bg-dark-7 py-3 rounded-none hover:text-btn-color"><i class="fa-solid fa-chevron-left"></i> Blog</a>
+                                </li>
+
+                                <li class="bg-btn-color/50 w-full items-center border border-btn-color rounded-b-lg overflow-hidden">
+                                    <a href="#contact" class="w-full block text-center hover:bg-dark-7 focus:bg-dark-7 py-3 rounded-none hover:text-btn-color"><i class="fa-solid fa-chevron-left"></i> Contact Us</a>
+                                </li>
+                                <!-- Button -->
+                                <li class="mt-6">
+                                    <a class="btn bg-btn-color hover:bg-transparent border-2 border-btn-color hover:border-btn-color h-auto min-h-0 px-6 py-4 text-base font-medium text-white hover:text-btn-color">Free Consultation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Logo -->
+                    <div>
+                        <a href="index.html">
+                            <img src="assets/images/logo2.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Nav Menu -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-dark-3 text-base">
+                        <li><a href="index.html" class="hover:bg-transparent hover:text-btn-color">Home</a></li>
+                        <li>
+                            <a href="#services" class="hover:bg-transparent hover:text-btn-color">Services <i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#cases" class="hover:bg-transparent hover:text-btn-color">Cases <i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="hover:bg-transparent hover:text-btn-color">Blog <i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="hover:bg-transparent hover:text-btn-color">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Consultation Button -->
+                <div class="navbar-end hidden lg:flex">
+                    <a class="btn bg-btn-color hover:bg-transparent border-2 border-btn-color hover:border-btn-color h-auto min-h-0 px-8 py-4 text-lg font-medium text-white hover:text-btn-color">Free Consultation</a>
+                </div>
+            </div>
+            <!-- Navbar Section End -->
+
+
+            <!-- Hero Section Start -->
+            <section class="mt-12 rounded-lg overflow-hidden">
+                <div class="hero py-10 sm:h-[500px] xl:h-[600px] 2xl:h-[720px]" style="background-image: url(assets/images/banner.png);">
+                    <div class="hero-overlay bg-transparent bg-gradient-to-t from-dark-1 to-dark-1/0"></div>
+
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="max-w-xl xl:max-w-[692px]">
+                            <h1 class="text-5xl sm:text-6xl xl:text-7xl font-extrabold font-eb-garamond leading-tight text-white">We Provide Effective Legal Solutions</h1>
+                            <p class="my-8 text-dark-6 leading-7">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                            </p>
+
+                            <!-- Search Button -->
+                            <div>
+                                <input type="text" class="input md:mr-5 px-6 sm:w-[400px] xl:w-[500px] h-[54px] sm:h-[64px] text-dark-4 text-sm sm:text-base" placeholder="Search your services">
+                                <button class="btn bg-btn-color hover:bg-black/70 border-2 border-btn-color hover:border-btn-color h-[54px] sm:h-[64px] sm:px-8 text-base sm:text-lg font-medium text-white hover:text-btn-color">
+                                    <span class="hidden sm:inline">Search</span>
+                                    <span class="sm:hidden"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero Section End -->
+        </header>
+        <!-- Header Section End -->
+
+
+        <!-- Main Body Part Start -->
+        <main>
+
+        </main>
+        <!-- Main Body Part End -->
+        
+
+        <!-- Tailwind CSS CDN Link -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Fontawesome Link -->
+        <script src="https://kit.fontawesome.com/a1c52cc1c0.js" crossorigin="anonymous"></script>
+
+        <!-- Custom Tailwind Color -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'dark-1': '#111111',
+                    'dark-2': '#414040',
+                    'dark-3': '#707070',
+                    'dark-4': '#A0A0A0',
+                    'dark-5': '#CFCFCF',
+                    'dark-6': '#E7E7E7',
+                    'dark-7': '#F3F3F3',
+                    'btn-color': '#B68C5A',
+                  }
+                },
+                container: {
+                    'max-width': {
+                        'xs': '475px'
+                    }
+                }
+              }
+            }
+          </script>
+    </body>
+</html>
