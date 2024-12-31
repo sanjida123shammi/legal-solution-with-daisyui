@@ -17,15 +17,15 @@
 
     <body class="font-poppins">
         <!-- Header Section Start -->
-        <header class="container mx-auto my-10">
+        <header class="container mx-auto my-7 md:my-10">
             <!-- Navbar Section Start -->
             <div class="navbar">
                 <div class="navbar-start justify-between lg:justify-start flex-row-reverse lg:flex-row w-full lg:w-1/2">
-                    <!-- Responsive Navbar -->
+
+                    <!-- Responsive Navbar Start -->
                     <div class="drawer drawer-end justify-end z-10 lg:hidden">
                         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-                        <div class="drawer-content">
-                            
+                        <div class="drawer-content">                            
                           <!-- Page content here -->                          
                             <div tabindex="0" role="button" class="btn btn-ghost pr-0 lg:hidden">
                                 <label for="my-drawer" class="drawer-button">
@@ -35,9 +35,10 @@
                                 </label>
                             </div>
                         </div>
+                        <!-- Responsive Menu -->
                         <div class="drawer-side">
                             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                            <ul class="menu bg-dark-7 text-base text-dark-2 min-h-full w-80 p-6 items-center">
+                            <ul class="menu bg-dark-7 text-base text-dark-2 min-h-full sm:w-80 p-6 items-center">
                                 <!-- Sidebar content here -->
                                 <li class="bg-btn-color/50 w-full items-center border border-btn-color rounded-t-lg overflow-hidden">
                                     <a href="index.html" class="w-full block text-center hover:bg-dark-7 focus:bg-dark-7 py-3 rounded-none hover:text-btn-color">Home</a>
@@ -65,6 +66,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Responsive Navbar End -->
 
                     <!-- Logo -->
                     <div>
@@ -77,18 +79,18 @@
                 <!-- Nav Menu -->
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-dark-3 text-base">
-                        <li><a href="index.html" class="hover:bg-transparent hover:text-btn-color">Home</a></li>
+                        <li><a href="index.html" class="hover:bg-transparent hover:text-btn-color active:bg-transparent active:text-btn-color focus:bg-transparent focus-within:text-btn-color">Home</a></li>
                         <li>
-                            <a href="#services" class="hover:bg-transparent hover:text-btn-color">Services <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="#services" class="hover:bg-transparent hover:text-btn-color active:bg-transparent active:text-btn-color focus:bg-transparent focus-within:text-btn-color">Services <i class="fa-solid fa-chevron-right"></i></a>
                         </li>
                         <li>
-                            <a href="#cases" class="hover:bg-transparent hover:text-btn-color">Cases <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="#cases" class="hover:bg-transparent hover:text-btn-color active:bg-transparent active:text-btn-color focus:bg-transparent focus-within:text-btn-color">Cases <i class="fa-solid fa-chevron-right"></i></a>
                         </li>
                         <li>
-                            <a href="#blog" class="hover:bg-transparent hover:text-btn-color">Blog <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="#blog" class="hover:bg-transparent hover:text-btn-color active:bg-transparent active:text-btn-color focus:bg-transparent focus-within:text-btn-color">Blog <i class="fa-solid fa-chevron-right"></i></a>
                         </li>
                         <li>
-                            <a href="#contact" class="hover:bg-transparent hover:text-btn-color">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="#contact" class="hover:bg-transparent hover:text-btn-color active:bg-transparent active:text-btn-color focus:bg-transparent focus-within:text-btn-color">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -102,7 +104,7 @@
 
 
             <!-- Hero Section Start -->
-            <section class="mt-12 rounded-lg overflow-hidden">
+            <section class="mt-7 md:mt-12 rounded-lg overflow-hidden">
                 <div class="hero py-10 sm:h-[500px] xl:h-[600px] 2xl:h-[720px]" style="background-image: url(assets/images/banner.png);">
                     <div class="hero-overlay bg-transparent bg-gradient-to-t from-dark-1 to-dark-1/0"></div>
 
@@ -131,8 +133,96 @@
 
 
         <!-- Main Body Part Start -->
-        <main>
+        <main class="container mx-auto">
+            <!-- Services Section Start -->
+            <section id="services" class="my-20 md:my-28 text-center">
+                <div class="max-w-3xl mx-auto space-y-5">
+                    <h2 class="text-4xl md:text-5xl font-extrabold leading-snug">The Legal Practice Area</h2>
+                    <p class="leading-7 text-dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                </div>
 
+                <!-- Services Grids -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
+                    <!-- First Service Grid -->
+                    <div class="space-y-7 px-5 py-10 md:p-10 xl:p-20 hover:bg-gradient-to-b hover:from-dark-7 hover:to-dark-7/0 border md:border-transparent md:border-b-dark-6 md:border-r-dark-6 lg:border-r-transparent hover:border-dark-6 lg:hover:border-r-transparent">
+                        <img src="assets/images/business.png" alt="Business Photo" class="mx-auto">
+                        <h3 class="text-3xl md:text-4xl font-extrabold">Business Law</h3>
+                        <p class="leading-7 text-dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+                        <div class="flex justify-center">
+                            <a href="" class="btn bg-transparent hover:bg-transparent border-none shadow-none">
+                                <img src="assets/images/Frame.png" alt="Arrow image">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Second Service Grid -->
+                    <div class="space-y-7 px-5 py-10 md:p-10 xl:p-20 hover:bg-gradient-to-b hover:from-dark-7 hover:to-dark-7/0 border border-dark-6 border-t-transparent md:border-r-transparent lg:border-r-dark-6 hover:border-dark-6">
+                        <img src="assets/images/criminal.png" alt="Business Photo" class="mx-auto">
+                        <h3 class="text-3xl md:text-4xl font-extrabold">Criminal Law</h3>
+                        <p class="leading-7 text-dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+                        <div class="flex justify-center">
+                            <a href="" class="btn bg-transparent hover:bg-transparent border-none shadow-none">
+                                <img src="assets/images/Frame.png" alt="Arrow image">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Third Service Grid -->
+                    <div class="space-y-7 px-5 py-10 md:p-10 xl:p-20 hover:bg-gradient-to-b hover:from-dark-7 hover:to-dark-7/0 border md:border-transparent md:border-b-dark-6 md:border-r-dark-6 hover:border-l-dark-6 hover:border-t-dark-7 lg:border-r-transparent lg:hover:border-dark-6 lg:hover:border-l-transparent">
+                        <img src="assets/images/child.png" alt="Business Photo" class="mx-auto">
+                        <h3 class="text-3xl md:text-4xl font-extrabold">Child Support</h3>
+                        <p class="leading-7 text-dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+                        <div class="flex justify-center">
+                            <a href="" class="btn bg-transparent hover:bg-transparent border-none shadow-none">
+                                <img src="assets/images/Frame.png" alt="Arrow image">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Fourth Service Grid -->
+                    <div class="space-y-7 px-5 py-10 md:p-10 xl:p-20 hover:bg-gradient-to-b hover:from-dark-7 hover:to-dark-7/0 border border-r-dark-6 md:border-r-transparent border-transparent border-b-dark-6 border-l-dark-6 lg:border-l-transparent lg:border-b-transparent hover:border-dark-6 hover:border-t-dark-7 lg:hover:border-r-dark-7">
+                        <img src="assets/images/education.png" alt="Business Photo" class="mx-auto">
+                        <h3 class="text-3xl md:text-4xl font-extrabold">Education Law</h3>
+                        <p class="leading-7 text-dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+                        <div class="flex justify-center">
+                            <a href="" class="btn bg-transparent hover:bg-transparent border-none shadow-none">
+                                <img src="assets/images/Frame.png" alt="Arrow image">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Fifth Service Grid -->
+                    <div class="space-y-7 px-5 py-10 md:p-10 xl:p-20 hover:bg-gradient-to-b hover:from-dark-7 hover:to-dark-7/0 border md:border-transparent lg:border-l-dark-6 md:border-r-dark-6 hover:border-l-dark-6 hover:border-b-dark-6 hover:border-t-dark-7">
+                        <img src="assets/images/divorce.png" alt="Business Photo" class="mx-auto">
+                        <h3 class="text-3xl md:text-4xl font-extrabold">Divorce Law</h3>
+                        <p class="leading-7 text-dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+                        <div class="flex justify-center">
+                            <a href="" class="btn bg-transparent hover:bg-transparent border-none shadow-none">
+                                <img src="assets/images/Frame.png" alt="Arrow image">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sixth Service Grid -->
+                    <div class="space-y-7 px-5 py-10 md:p-10 xl:p-20 hover:bg-gradient-to-b hover:from-dark-7 hover:to-dark-7/0 border md:border-transparent md:border-l-dark-6 lg:border-l-transparent hover:border-dark-6 hover:border-t-dark-7 lg:hover:border-l-dark-7">
+                        <img src="assets/images/tax.png" alt="Business Photo" class="mx-auto">
+                        <h3 class="text-3xl md:text-4xl font-extrabold">Tax Law</h3>
+                        <p class="leading-7 text-dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+                        <div class="flex justify-center">
+                            <a href="" class="btn bg-transparent hover:bg-transparent border-none shadow-none">
+                                <img src="assets/images/Frame.png" alt="Arrow image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section End -->
         </main>
         <!-- Main Body Part End -->
         
