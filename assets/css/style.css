@@ -9,6 +9,9 @@
 
 
 /* Global CSS */
+html {
+    color-scheme: light;
+}  
 .font-poppins{
     font-family: "Poppins", serif;
 }
